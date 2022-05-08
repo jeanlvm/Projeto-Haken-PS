@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: white;
+    color: rgb(0, 0, 0);
     font-family: 'Karla', sans-serif;
 }
 
@@ -13,7 +13,32 @@
 
 body{
     background-color: var(--bgcoloor);
+}
 
+.github{
+    display: flex;
+    justify-content: right;
+    position: absolute;
+    width: 90vw;
+    margin:40px auto;
+    gap: 20px;
+}
+
+.github a {
+    background-color:black ;
+    color: var(--bgcoloor);
+    width: 5%;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: solid 2px black;
+}
+
+.github a:hover{
+    background-color:rgb(56, 59, 58);
+    color: solid 2px black;
 }
 
 .link-tree {
@@ -38,7 +63,7 @@ gap: 20px;
 .link-tree a {
 background-color:black ;
 color: var(--bgcoloor);
-width: 100%;
+width: 50%;
 padding: 15px;
 text-decoration: none;
 text-transform: uppercase;
@@ -48,10 +73,38 @@ border: solid 2px black;
 }
 
 .link-tree a:hover{
-    background-color: black;
+    background-color:rgb(56, 59, 58);
     color: solid 2px black;
 }
 
 .link-tree {
     width: 40vw;
 }
+
+.redes{
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+    margin:40px auto;
+    gap: 20px;
+}
+
+.redes a {
+    background-color:black ;
+    color: var(--bgcoloor);
+    width: 7%;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: solid 2px black;
+}
+
+.redes a:hover{
+    background-color:rgb(56, 59, 58);
+    color: solid 2px black;
+}
+
+
+
