@@ -2,8 +2,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    color: rgb(0, 0, 0);
     font-family: 'Karla', sans-serif;
 }
 
@@ -13,33 +11,51 @@
 
 body{
     background-color: var(--bgcoloor);
+    transition: backgroud 0.2s linear;
 }
+ body.dark{
+     background: rgb(24, 24, 24);
+ }
 
-.github{
-    display: flex;
-    justify-content: right;
-    position: absolute;
-    width: 90vw;
-    margin:40px auto;
-    gap: 20px;
-}
+ .checkbox{
+opacity: 0;
+position: absolute;
+ }
 
-.github a {
-    background-color:black ;
-    color: var(--bgcoloor);
-    width: 5%;
-    padding: 15px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 1.1rem;
-    font-weight: bold;
-    border: solid 2px black;
-}
+ .label{
+     background-color: black;
+     border-radius: 50px;
+     cursor: pointer;
 
-.github a:hover{
-    background-color:rgb(56, 59, 58);
-    color: solid 2px black;
-}
+     display: flex;
+     justify-content: space-between;
+
+     padding: 5px;
+     position: relative;
+     height: 26px;
+     width: 50px;
+
+     transform: scale(1);
+     
+ }
+
+ .label .ball{
+     background-color: white;
+     border-radius: 50%;
+     position: absolute;
+     top: 2px;
+     left: 2px;
+
+     height: 32px;
+     width: 32px;
+
+     transform: translateX(0px);
+     transition: transform 0.2s linear;
+ }
+
+ .checkbox:checked + .label .ball{
+     transform: translateX(24px);
+ }
 
 .link-tree {
 display: flex;
